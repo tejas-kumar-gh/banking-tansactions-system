@@ -1,8 +1,8 @@
 
-    package com.banking.banking_transaction_system.repository;
-
+package com.banking.banking_transaction_system.repository;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -34,8 +34,7 @@ public class AccountRepository {
         jdbcTemplate.update(connection -> {
 
             PreparedStatement ps = connection.prepareStatement(
-                    sql, Statement.RETURN_GENERATED_KEYS
-            );
+                    sql, Statement.RETURN_GENERATED_KEYS);
 
             ps.setString(1, account.getAccountNumber());
             ps.setLong(2, account.getCustomerId());
@@ -62,48 +61,59 @@ public class AccountRepository {
                 WHERE account_number = ?
                 """;
 
-        return jdbcTemplate.query(sql, (rs, rowNum) ->
-                new Account(
-                        rs.getLong("account_id"),
-                        rs.getString("account_number"),
-                        rs.getLong("customer_id"),
-                        rs.getBigDecimal("balance"),
-                        rs.getString("account_status")
-                ), accountNumber
-        ).stream().findFirst();
+        return jdbcTemplate.query(sql, (rs, rowNum) -> new Account(
+                rs.getLong("account_id"),
+                rs.getString("account_number"),
+                rs.getLong("customer_id"),
+                rs.getBigDecimal("balance"),
+                rs.getString("account_status")), accountNumber).stream().findFirst();
     }
 
+    public Optional<Account> findByAccountNumberForUpdate(String accountNumber) {
 
-public Optional<Account> findByAccountNumberForUpdate(String accountNumber) {
+        String sql = """
+                SELECT account_id, account_number, customer_id,
+                       balance, account_status
+                FROM account
+                WHERE account_number = ?
+                FOR UPDATE
+                """;
 
-    String sql = """
-            SELECT account_id, account_number, customer_id,
-                   balance, account_status
-            FROM account
-            WHERE account_number = ?
-            FOR UPDATE
-            """;
+        return jdbcTemplate.query(sql, (rs, rowNum) -> new Account(
+                rs.getLong("account_id"),
+                rs.getString("account_number"),
+                rs.getLong("customer_id"),
+                rs.getBigDecimal("balance"),
+                rs.getString("account_status")), accountNumber).stream().findFirst();
+    }
 
-    return jdbcTemplate.query(sql, (rs, rowNum) ->
-            new Account(
-                    rs.getLong("account_id"),
-                    rs.getString("account_number"),
-                    rs.getLong("customer_id"),
-                    rs.getBigDecimal("balance"),
-                    rs.getString("account_status")
-            ), accountNumber
-    ).stream().findFirst();
-}
+    public void updateBalance(Long accountId, java.math.BigDecimal newBalance) {
 
-public void updateBalance(Long accountId, java.math.BigDecimal newBalance) {
+        String sql = """
+                UPDATE account
+                SET balance = ?
+                WHERE account_id = ?
+                """;
 
-    String sql = """
-            UPDATE account
-            SET balance = ?
-            WHERE account_id = ?
-            """;
+        jdbcTemplate.update(sql, newBalance, accountId);
+    }
 
-    jdbcTemplate.update(sql, newBalance, accountId);
-}
+    public List<Account> findAccountsForUpdate(String accountNumber1, String accountNumber2) {
+
+        String sql = """
+                    SELECT account_id, account_number, customer_id, balance, account_status
+                    FROM account
+                    WHERE account_number IN (?, ?)
+                    ORDER BY account_id
+                    FOR UPDATE
+                """;
+
+        return jdbcTemplate.query(sql, (rs, rowNum) -> new Account(
+                rs.getLong("account_id"),
+                rs.getString("account_number"),
+                rs.getLong("customer_id"),
+                rs.getBigDecimal("balance"),
+                rs.getString("account_status")), accountNumber1, accountNumber2);
+    }
 
 }

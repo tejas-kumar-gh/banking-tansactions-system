@@ -17,23 +17,50 @@ import com.banking.banking_transaction_system.service.TransactionService;
 @RequestMapping("/api/transactions")
 public class TransactionController {
 
-    private final TransactionService transactionService;
+  private final TransactionService transactionService;
 
-    public TransactionController(TransactionService transactionService) {
-        this.transactionService = transactionService;
-    }
+  public TransactionController(TransactionService transactionService) {
+    this.transactionService = transactionService;
+  }
 
-    @PostMapping("/deposit")
-    public ResponseEntity<Account> deposit(
-            @RequestBody Map<String, String> request) {
+  @PostMapping("/deposit")
+  public ResponseEntity<Account> deposit(
+      @RequestBody Map<String, String> request) {
 
-        String accountNumber = request.get("accountNumber");
-        BigDecimal amount = new BigDecimal(request.get("amount"));
+    String accountNumber = request.get("accountNumber");
+    BigDecimal amount = new BigDecimal(request.get("amount"));
 
-        Account updatedAccount = transactionService.deposit(
-                accountNumber, amount
-        );
+    Account updatedAccount = transactionService.deposit(
+        accountNumber, amount);
 
-        return ResponseEntity.ok(updatedAccount);
-    }
+    return ResponseEntity.ok(updatedAccount);
+  }
+
+  @PostMapping("/withdraw")
+  public ResponseEntity<Account> withdraw(
+      @RequestBody Map<String, String> request) {
+
+    String accountNumber = request.get("accountNumber");
+    BigDecimal amount = new BigDecimal(request.get("amount"));
+
+    Account account = transactionService.withdraw(accountNumber, amount);
+
+    return ResponseEntity.ok(account);
+  }
+
+  @PostMapping("/transfer")
+  public ResponseEntity<Map<String, Account>> transfer(
+      @RequestBody Map<String, String> request) {
+
+    String fromAccountNumber = request.get("fromAccountNumber");
+    String toAccountNumber = request.get("toAccountNumber");
+    BigDecimal amount = new BigDecimal(request.get("amount"));
+
+    Map<String, Account> result = transactionService.transfer(
+        fromAccountNumber,
+        toAccountNumber,
+        amount);
+
+    return ResponseEntity.ok(result);
+  }
 }

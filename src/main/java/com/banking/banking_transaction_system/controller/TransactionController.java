@@ -2,15 +2,19 @@
 package com.banking.banking_transaction_system.controller;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.banking.banking_transaction_system.model.Account;
+import com.banking.banking_transaction_system.model.Transaction;
 import com.banking.banking_transaction_system.service.TransactionService;
 
 @RestController
@@ -62,5 +66,14 @@ public class TransactionController {
         amount);
 
     return ResponseEntity.ok(result);
+  }
+
+  @GetMapping("/history/{accountNumber}")
+  public ResponseEntity<List<Transaction>> getTransactionHistory(
+      @PathVariable String accountNumber) {
+
+    List<Transaction> transactions = transactionService.getTransactionHistory(accountNumber);
+
+    return ResponseEntity.ok(transactions);
   }
 }

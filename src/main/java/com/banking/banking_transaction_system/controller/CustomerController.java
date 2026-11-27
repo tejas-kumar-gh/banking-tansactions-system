@@ -1,6 +1,4 @@
-
 package com.banking.banking_transaction_system.controller;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +11,7 @@ import com.banking.banking_transaction_system.service.CustomerService;
 
 @RestController
 @RequestMapping("/api/customers")
+
 public class CustomerController {
 
     private final CustomerService customerService;
@@ -24,7 +23,7 @@ public class CustomerController {
     @PostMapping
     public ResponseEntity<Customer> createCustomer(
             @RequestBody Customer customer) {
-
+// request body will be automatically deserialized into a Customer object by Spring Boot
         Customer savedCustomer = customerService.createCustomer(customer);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(savedCustomer);

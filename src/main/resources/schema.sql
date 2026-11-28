@@ -96,3 +96,91 @@ ON banking_transaction(created_at);
 
 CREATE INDEX idx_audit_transaction
 ON transaction_audit(transaction_id);
+
+
+CREATE TABLE performance_test_run (
+    run_id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    run_name VARCHAR(100),
+    worker_count INT NOT NULL,
+    total_transactions INT NOT NULL,
+    test_status VARCHAR(20) NOT NULL,
+    started_at DATETIME(3),
+    completed_at DATETIME(3),
+    duration_ms BIGINT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+CREATE TABLE performance_test_metrics (
+    metric_id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    run_id BIGINT NOT NULL UNIQUE,
+
+    success_count INT DEFAULT 0,
+    failed_count INT DEFAULT 0,
+    rejected_count INT DEFAULT 0,
+    technical_error_count INT DEFAULT 0,
+
+    average_duration_ms DECIMAL(12,3),
+    minimum_duration_ms BIGINT,
+    maximum_duration_ms BIGINT,
+
+    throughput_tps DECIMAL(12,3),
+    success_rate DECIMAL(7,3),
+    failure_rate DECIMAL(7,3),
+
+    peak_active_threads INT,
+    queue_capacity INT,
+    db_max_pool_size INT,
+    peak_db_active_connections INT,
+
+    FOREIGN KEY (run_id)
+        REFERENCES performance_test_run(run_id)
+);
+
+use banking_db;
+
+CREATE TABLE performance_test_run (
+    run_id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    run_name VARCHAR(100),
+    worker_count INT NOT NULL,
+    total_transactions INT NOT NULL,
+    test_status VARCHAR(20) NOT NULL,
+    started_at DATETIME(3),
+    completed_at DATETIME(3),
+    duration_ms BIGINT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+
+CREATE TABLE performance_test_metrics (
+    metric_id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    run_id BIGINT NOT NULL UNIQUE,
+
+    success_count INT DEFAULT 0,
+    failed_count INT DEFAULT 0,
+    rejected_count INT DEFAULT 0,
+    technical_error_count INT DEFAULT 0,
+
+    average_duration_ms DECIMAL(12,3),
+    minimum_duration_ms BIGINT,
+    maximum_duration_ms BIGINT,
+
+    throughput_tps DECIMAL(12,3),
+    success_rate DECIMAL(7,3),
+    failure_rate DECIMAL(7,3),
+
+    peak_active_threads INT,
+    queue_capacity INT,
+    db_max_pool_size INT,
+    peak_db_active_connections INT,
+
+    FOREIGN KEY (run_id)
+        REFERENCES performance_test_run(run_id)
+) ENGINE=InnoDB;
+
+
+
+ALTER TABLE performance_test_metrics
+ADD COLUMN peak_db_idle_connections INT DEFAULT 0,
+ADD COLUMN peak_db_pending_threads INT DEFAULT 0;

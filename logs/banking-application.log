@@ -1,0 +1,966 @@
+2026-11-28 09:15:03.255 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.6.Final
+2026-11-28 09:15:03.377 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 11564 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:15:03.379 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:15:03.453 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-28 09:15:03.454 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-28 09:15:05.234 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:15:05.260 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:15:05.266 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:15:05.267 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:15:05.344 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1889 ms
+2026-11-28 09:15:05.479 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-11-28 09:15:06.062 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64d22c1a
+2026-11-28 09:15:06.066 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-11-28 09:15:06.688 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:15:06.727 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:15:06.735 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 4.265 seconds (process running for 4.979)
+2026-11-28 09:16:57.939 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-28 09:16:57.946 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-28 09:16:57.967 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2026-11-28 09:21:54.734 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-11-28 09:21:54.772 INFO  [Thread-1] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:21:54.779 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:21:55.046 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:21:55.047 INFO  [Thread-1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:21:55.067 INFO  [Thread-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-11-28 09:21:55.089 INFO  [Thread-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-11-28 09:21:55.282 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 11564 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:21:55.283 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:21:55.739 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:21:55.741 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:21:55.742 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:21:55.742 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:21:55.767 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 481 ms
+2026-11-28 09:21:55.804 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-11-28 09:21:55.845 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4445e505
+2026-11-28 09:21:55.846 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-11-28 09:21:56.077 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:21:56.085 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:21:56.108 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.872 seconds (process running for 414.351)
+2026-11-28 09:21:56.113 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:23:23.291 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:23:23.293 INFO  [Thread-5] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:23:23.294 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:23:23.512 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:23:23.534 INFO  [Thread-5] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:23:23.568 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-11-28 09:23:23.573 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-11-28 09:23:23.687 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 11564 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:23:23.688 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:23:24.075 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:23:24.076 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:23:24.077 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:23:24.077 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:23:24.096 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 404 ms
+2026-11-28 09:23:24.127 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-11-28 09:23:24.153 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c48102b
+2026-11-28 09:23:24.155 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-11-28 09:23:24.339 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:23:24.343 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:23:24.346 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.707 seconds (process running for 502.59)
+2026-11-28 09:23:24.347 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:23:52.230 INFO  [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:23:52.428 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:23:52.430 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-11-28 09:23:52.433 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-11-28 09:28:52.494 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.6.Final
+2026-11-28 09:28:52.571 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:28:52.572 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:28:52.631 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-28 09:28:52.631 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-28 09:28:53.919 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:28:53.938 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:28:53.942 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:28:53.943 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:28:54.018 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1386 ms
+2026-11-28 09:28:54.154 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-11-28 09:28:54.606 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4197c09b
+2026-11-28 09:28:54.608 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-11-28 09:28:55.189 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:28:55.225 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:28:55.236 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 3.332 seconds (process running for 3.89)
+2026-11-28 09:29:51.524 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-28 09:29:51.525 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-28 09:29:51.530 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-11-28 09:33:40.709 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:33:40.735 INFO  [Thread-1] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:33:40.740 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:33:40.933 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:33:40.934 INFO  [Thread-1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:33:40.943 INFO  [Thread-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-11-28 09:33:40.959 INFO  [Thread-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-11-28 09:33:41.113 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:33:41.114 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:33:41.418 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:33:41.420 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:33:41.421 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:33:41.421 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:33:41.443 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 323 ms
+2026-11-28 09:33:41.476 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-11-28 09:33:41.506 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27f0c64d
+2026-11-28 09:33:41.506 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-11-28 09:33:41.736 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:33:41.741 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:33:41.745 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.685 seconds (process running for 290.414)
+2026-11-28 09:33:41.747 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:34:07.519 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-28 09:34:07.520 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-28 09:34:07.523 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-11-28 09:34:07.539 WARN  [http-nio-8080-exec-2] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-11-28 09:43:05.156 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:43:05.179 INFO  [Thread-5] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:43:05.187 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:43:05.408 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:43:05.410 INFO  [Thread-5] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:43:05.421 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-11-28 09:43:05.432 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-11-28 09:43:05.631 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:43:05.631 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:43:05.965 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:43:05.967 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:43:05.968 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:43:05.970 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:43:06.007 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 370 ms
+2026-11-28 09:43:06.050 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-11-28 09:43:06.087 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31d5b3a8
+2026-11-28 09:43:06.088 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-11-28 09:43:06.271 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:43:06.275 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:43:06.279 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.698 seconds (process running for 854.978)
+2026-11-28 09:43:06.280 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:43:27.309 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-28 09:43:27.310 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-28 09:43:27.313 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-11-28 09:45:16.951 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:45:16.958 INFO  [Thread-9] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:45:16.960 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:45:17.307 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:45:17.308 INFO  [Thread-9] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:45:17.310 INFO  [Thread-9] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-11-28 09:45:17.316 INFO  [Thread-9] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-11-28 09:45:17.430 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:45:17.431 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:45:17.826 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:45:17.828 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:45:17.828 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:45:17.828 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:45:17.854 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 420 ms
+2026-11-28 09:45:17.890 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-11-28 09:45:17.909 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75adeb9
+2026-11-28 09:45:17.911 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-11-28 09:45:18.184 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:45:18.190 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:45:18.193 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.803 seconds (process running for 986.898)
+2026-11-28 09:45:18.195 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:45:24.656 INFO  [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-28 09:45:24.657 INFO  [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-28 09:45:24.660 INFO  [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-11-28 09:48:09.248 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:48:09.252 INFO  [Thread-13] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:48:09.253 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:48:09.486 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:48:09.487 INFO  [Thread-13] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:48:09.490 INFO  [Thread-13] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-11-28 09:48:09.499 INFO  [Thread-13] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2026-11-28 09:48:09.617 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:48:09.618 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:48:09.882 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:48:09.883 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:48:09.884 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:48:09.884 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:48:09.902 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 280 ms
+2026-11-28 09:48:09.937 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2026-11-28 09:48:09.958 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a9dad6d
+2026-11-28 09:48:09.958 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2026-11-28 09:48:10.168 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:48:10.173 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:48:10.178 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.601 seconds (process running for 1158.889)
+2026-11-28 09:48:10.179 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:48:17.709 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-28 09:48:17.713 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-28 09:48:17.718 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-11-28 09:53:10.515 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:53:10.539 INFO  [Thread-17] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:53:10.552 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:10.865 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:53:10.868 INFO  [Thread-17] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:10.881 INFO  [Thread-17] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2026-11-28 09:53:10.903 INFO  [Thread-17] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2026-11-28 09:53:11.142 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:53:11.142 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:53:11.648 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:53:11.651 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:11.651 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:53:11.652 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:53:11.675 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 529 ms
+2026-11-28 09:53:11.720 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2026-11-28 09:53:11.748 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ca3f016
+2026-11-28 09:53:11.748 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2026-11-28 09:53:11.951 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:11.955 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:53:11.961 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.882 seconds (process running for 1460.683)
+2026-11-28 09:53:11.963 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:53:21.667 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:53:21.670 INFO  [Thread-21] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:53:21.670 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:21.907 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:53:21.908 INFO  [Thread-21] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:21.910 INFO  [Thread-21] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2026-11-28 09:53:21.917 INFO  [Thread-21] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2026-11-28 09:53:22.007 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:53:22.008 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:53:22.334 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:53:22.336 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:22.337 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:53:22.338 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:53:22.386 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 375 ms
+2026-11-28 09:53:22.410 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2026-11-28 09:53:22.436 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@618e747
+2026-11-28 09:53:22.442 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2026-11-28 09:53:22.651 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:22.656 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:53:22.658 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.687 seconds (process running for 1471.381)
+2026-11-28 09:53:22.659 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:53:24.102 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:53:24.104 INFO  [Thread-25] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:53:24.105 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:24.374 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:53:24.374 INFO  [Thread-25] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:24.376 INFO  [Thread-25] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2026-11-28 09:53:24.378 INFO  [Thread-25] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2026-11-28 09:53:24.452 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:53:24.452 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:53:24.633 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:53:24.634 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:24.635 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:53:24.635 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:53:24.648 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 195 ms
+2026-11-28 09:53:24.668 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2026-11-28 09:53:24.684 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@150f33fa
+2026-11-28 09:53:24.684 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2026-11-28 09:53:24.790 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:24.793 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:53:24.796 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.367 seconds (process running for 1473.518)
+2026-11-28 09:53:24.797 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:53:43.885 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:53:43.887 INFO  [Thread-29] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:53:43.889 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:44.087 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:53:44.087 INFO  [Thread-29] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:44.089 INFO  [Thread-29] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2026-11-28 09:53:44.091 INFO  [Thread-29] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2026-11-28 09:53:44.158 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:53:44.159 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:53:44.399 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:53:44.400 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:44.400 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:53:44.400 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:53:44.418 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 258 ms
+2026-11-28 09:53:44.446 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+2026-11-28 09:53:44.460 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c8a396a
+2026-11-28 09:53:44.461 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+2026-11-28 09:53:44.573 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:44.578 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:53:44.582 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.443 seconds (process running for 1493.305)
+2026-11-28 09:53:44.584 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:53:47.064 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:53:47.066 INFO  [Thread-33] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:53:47.068 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:47.282 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:53:47.282 INFO  [Thread-33] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:47.284 INFO  [Thread-33] com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+2026-11-28 09:53:47.286 INFO  [Thread-33] com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+2026-11-28 09:53:47.356 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:53:47.356 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:53:47.606 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:53:47.607 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:47.608 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:53:47.608 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:53:47.628 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 270 ms
+2026-11-28 09:53:47.652 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+2026-11-28 09:53:47.671 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f0f8b83
+2026-11-28 09:53:47.671 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+2026-11-28 09:53:47.797 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:47.802 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:53:47.806 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.473 seconds (process running for 1496.529)
+2026-11-28 09:53:47.807 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:53:51.324 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:53:51.327 INFO  [Thread-37] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:53:51.329 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:51.569 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:53:51.569 INFO  [Thread-37] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:51.571 INFO  [Thread-37] com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+2026-11-28 09:53:51.575 INFO  [Thread-37] com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+2026-11-28 09:53:51.650 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:53:51.650 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:53:51.892 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:53:51.892 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:51.893 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:53:51.893 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:53:51.906 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 255 ms
+2026-11-28 09:53:51.933 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
+2026-11-28 09:53:51.947 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@449e58a3
+2026-11-28 09:53:51.948 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
+2026-11-28 09:53:52.107 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:53:52.111 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:53:52.114 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.492 seconds (process running for 1500.838)
+2026-11-28 09:53:52.116 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:53:59.816 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:53:59.818 INFO  [Thread-41] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:53:59.819 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:54:00.041 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:54:00.041 INFO  [Thread-41] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:54:00.044 INFO  [Thread-41] com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
+2026-11-28 09:54:00.046 INFO  [Thread-41] com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+2026-11-28 09:54:00.132 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:54:00.132 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:54:00.440 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:54:00.441 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:54:00.442 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:54:00.443 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:54:00.473 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 339 ms
+2026-11-28 09:54:00.506 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
+2026-11-28 09:54:00.525 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3abc7f29
+2026-11-28 09:54:00.526 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
+2026-11-28 09:54:00.662 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:54:00.665 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:54:00.667 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.567 seconds (process running for 1509.391)
+2026-11-28 09:54:00.668 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:54:33.177 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2026-11-28 09:54:33.180 INFO  [Thread-45] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:54:33.181 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:54:33.462 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:54:33.463 INFO  [Thread-45] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:54:33.465 INFO  [Thread-45] com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
+2026-11-28 09:54:33.468 INFO  [Thread-45] com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.
+2026-11-28 09:54:33.553 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:54:33.554 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:54:33.751 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:54:33.752 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:54:33.752 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:54:33.752 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:54:33.767 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 211 ms
+2026-11-28 09:54:33.794 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Starting...
+2026-11-28 09:54:33.812 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69e3d43f
+2026-11-28 09:54:33.813 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Start completed.
+2026-11-28 09:54:33.942 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:54:33.946 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:54:33.948 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.428 seconds (process running for 1542.674)
+2026-11-28 09:54:33.949 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:55:23.285 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:55:23.287 INFO  [Thread-49] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:55:23.288 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:55:23.475 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:55:23.476 INFO  [Thread-49] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:55:23.478 INFO  [Thread-49] com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown initiated...
+2026-11-28 09:55:23.481 INFO  [Thread-49] com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown completed.
+2026-11-28 09:55:23.550 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:55:23.550 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:55:23.760 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:55:23.760 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:55:23.761 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:55:23.761 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:55:23.774 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 222 ms
+2026-11-28 09:55:23.797 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Starting...
+2026-11-28 09:55:23.812 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c367b7a
+2026-11-28 09:55:23.812 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Start completed.
+2026-11-28 09:55:23.921 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:55:23.924 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:55:23.926 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.398 seconds (process running for 1592.654)
+2026-11-28 09:55:23.928 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:55:51.479 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:55:51.482 INFO  [Thread-53] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:55:51.483 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:55:51.823 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:55:51.824 INFO  [Thread-53] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:55:51.826 INFO  [Thread-53] com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown initiated...
+2026-11-28 09:55:51.829 INFO  [Thread-53] com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown completed.
+2026-11-28 09:55:51.912 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:55:51.912 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:55:52.154 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:55:52.154 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:55:52.155 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:55:52.155 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:55:52.172 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 258 ms
+2026-11-28 09:55:52.196 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Starting...
+2026-11-28 09:55:52.212 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e215ee1
+2026-11-28 09:55:52.212 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Start completed.
+2026-11-28 09:55:52.345 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:55:52.349 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:55:52.351 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.464 seconds (process running for 1621.08)
+2026-11-28 09:55:52.352 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:56:31.160 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 09:56:31.164 INFO  [Thread-57] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 09:56:31.165 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:56:31.761 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 09:56:31.762 INFO  [Thread-57] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:56:31.767 INFO  [Thread-57] com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown initiated...
+2026-11-28 09:56:31.774 INFO  [Thread-57] com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown completed.
+2026-11-28 09:56:31.968 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 09:56:31.968 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 09:56:32.596 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 09:56:32.598 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:56:32.599 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 09:56:32.599 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 09:56:32.645 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 671 ms
+2026-11-28 09:56:32.702 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Starting...
+2026-11-28 09:56:32.735 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c188bc5
+2026-11-28 09:56:32.735 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Start completed.
+2026-11-28 09:56:33.022 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 09:56:33.031 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 09:56:33.036 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 1.139 seconds (process running for 1661.765)
+2026-11-28 09:56:33.039 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 09:56:54.659 INFO  [http-nio-8080-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-28 09:56:54.659 INFO  [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-28 09:56:54.664 INFO  [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-11-28 10:01:15.863 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 10:01:15.897 INFO  [Thread-61] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 10:01:15.951 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:16.821 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 10:01:16.822 INFO  [Thread-61] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:16.832 INFO  [Thread-61] com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown initiated...
+2026-11-28 10:01:16.868 INFO  [Thread-61] com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown completed.
+2026-11-28 10:01:18.711 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:01:18.711 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:01:23.597 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:01:23.598 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:23.598 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:01:23.598 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:01:23.611 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4894 ms
+2026-11-28 10:01:23.649 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Starting...
+2026-11-28 10:01:23.693 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-17 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46aa13ce
+2026-11-28 10:01:23.695 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Start completed.
+2026-11-28 10:01:23.824 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:23.828 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 10:01:23.830 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 5.23 seconds (process running for 1952.571)
+2026-11-28 10:01:23.832 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 10:01:25.267 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2026-11-28 10:01:25.268 INFO  [Thread-65] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 10:01:25.268 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:25.572 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 10:01:25.573 INFO  [Thread-65] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:25.575 INFO  [Thread-65] com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown initiated...
+2026-11-28 10:01:25.577 INFO  [Thread-65] com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown completed.
+2026-11-28 10:01:25.646 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:01:25.647 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:01:26.080 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:01:26.082 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:26.083 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:01:26.084 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:01:26.118 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 470 ms
+2026-11-28 10:01:26.151 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Starting...
+2026-11-28 10:01:26.167 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-18 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59dff542
+2026-11-28 10:01:26.168 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Start completed.
+2026-11-28 10:01:26.350 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:26.357 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 10:01:26.363 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.737 seconds (process running for 1955.104)
+2026-11-28 10:01:26.365 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 10:01:36.161 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 10:01:36.163 INFO  [Thread-69] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 10:01:36.163 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:36.550 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 10:01:36.550 INFO  [Thread-69] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:36.552 INFO  [Thread-69] com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Shutdown initiated...
+2026-11-28 10:01:36.556 INFO  [Thread-69] com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Shutdown completed.
+2026-11-28 10:01:37.031 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:01:37.031 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:01:37.799 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:01:37.800 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:37.801 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:01:37.802 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:01:37.880 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 844 ms
+2026-11-28 10:01:37.951 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Starting...
+2026-11-28 10:01:37.991 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-19 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d5638f5
+2026-11-28 10:01:37.993 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Start completed.
+2026-11-28 10:01:38.278 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:38.281 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 10:01:38.284 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 1.34 seconds (process running for 1967.026)
+2026-11-28 10:01:38.285 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 10:01:41.767 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 10:01:41.769 INFO  [Thread-73] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 10:01:41.770 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:41.984 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 10:01:41.984 INFO  [Thread-73] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:41.986 INFO  [Thread-73] com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Shutdown initiated...
+2026-11-28 10:01:41.990 INFO  [Thread-73] com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Shutdown completed.
+2026-11-28 10:01:42.069 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:01:42.070 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:01:42.284 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:01:42.284 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:42.284 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:01:42.285 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:01:42.299 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 226 ms
+2026-11-28 10:01:42.324 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Starting...
+2026-11-28 10:01:42.336 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-20 - Added connection com.mysql.cj.jdbc.ConnectionImpl@313d6784
+2026-11-28 10:01:42.336 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Start completed.
+2026-11-28 10:01:42.456 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:42.459 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 10:01:42.462 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.421 seconds (process running for 1971.204)
+2026-11-28 10:01:42.464 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 10:01:57.464 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-11-28 10:01:57.490 INFO  [Thread-77] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 10:01:57.492 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:57.903 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 10:01:57.904 INFO  [Thread-77] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:57.908 INFO  [Thread-77] com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Shutdown initiated...
+2026-11-28 10:01:57.917 INFO  [Thread-77] com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Shutdown completed.
+2026-11-28 10:01:58.231 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:01:58.495 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:01:59.609 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:01:59.611 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:59.611 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:01:59.611 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:01:59.635 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1011 ms
+2026-11-28 10:01:59.674 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Starting...
+2026-11-28 10:01:59.692 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-21 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24087cd3
+2026-11-28 10:01:59.692 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Start completed.
+2026-11-28 10:01:59.903 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:01:59.908 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 10:01:59.914 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 1.914 seconds (process running for 1988.656)
+2026-11-28 10:01:59.916 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 10:02:01.354 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2026-11-28 10:02:01.356 INFO  [Thread-81] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 10:02:01.357 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:02:01.629 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 10:02:01.629 INFO  [Thread-81] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:02:01.631 INFO  [Thread-81] com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Shutdown initiated...
+2026-11-28 10:02:01.635 INFO  [Thread-81] com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Shutdown completed.
+2026-11-28 10:02:01.729 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:02:01.729 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:02:02.082 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:02:02.083 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:02:02.084 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:02:02.084 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:02:02.102 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 371 ms
+2026-11-28 10:02:02.119 WARN  [restartedMain] o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountController' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\controller\AccountController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountService' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\service\AccountService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountRepository' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\repository\AccountRepository.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jdbcTemplate' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/JdbcTemplateConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of JdbcTemplate bean 'jdbcTemplate': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'monitoringDataSource' defined in class path resource [com/banking/banking_transaction_system/config/DataSourceMonitoringConfig.class]: Unsatisfied dependency expressed through method 'monitoringDataSource' parameter 0: Error creating bean with name 'monitoringDataSource': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2026-11-28 10:02:02.120 INFO  [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-11-28 10:02:02.128 INFO  [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-28 10:02:02.153 ERROR [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   accountController defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\controller\AccountController.class]
+      ?
+   accountService defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\service\AccountService.class]
+      ?
+   accountRepository defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\repository\AccountRepository.class]
+      ?
+   jdbcTemplate defined in class path resource [org/springframework/boot/jdbc/autoconfigure/JdbcTemplateConfiguration.class]
+      ?
+   dataSourceScriptDatabaseInitializer defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]
+???????
+|  monitoringDataSource defined in class path resource [com/banking/banking_transaction_system/config/DataSourceMonitoringConfig.class]
+???????
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2026-11-28 10:04:39.051 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:04:39.052 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:04:39.487 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:04:39.494 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:04:39.495 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:04:39.495 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:04:39.518 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 458 ms
+2026-11-28 10:04:39.534 WARN  [restartedMain] o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountController' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\controller\AccountController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountService' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\service\AccountService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountRepository' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\repository\AccountRepository.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jdbcTemplate' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/JdbcTemplateConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of JdbcTemplate bean 'jdbcTemplate': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'monitoringDataSource' defined in class path resource [com/banking/banking_transaction_system/config/DataSourceMonitoringConfig.class]: Unsatisfied dependency expressed through method 'monitoringDataSource' parameter 0: Error creating bean with name 'monitoringDataSource': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2026-11-28 10:04:39.535 INFO  [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-11-28 10:04:39.541 INFO  [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-28 10:04:39.547 ERROR [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   accountController defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\controller\AccountController.class]
+      ?
+   accountService defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\service\AccountService.class]
+      ?
+   accountRepository defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\repository\AccountRepository.class]
+      ?
+   jdbcTemplate defined in class path resource [org/springframework/boot/jdbc/autoconfigure/JdbcTemplateConfiguration.class]
+      ?
+   dataSourceScriptDatabaseInitializer defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]
+???????
+|  monitoringDataSource defined in class path resource [com/banking/banking_transaction_system/config/DataSourceMonitoringConfig.class]
+???????
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2026-11-28 10:05:59.069 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:05:59.070 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:05:59.410 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:05:59.412 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:05:59.412 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:05:59.413 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:05:59.433 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 358 ms
+2026-11-28 10:05:59.451 WARN  [restartedMain] o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountController' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\controller\AccountController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountService' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\service\AccountService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountRepository' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\repository\AccountRepository.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jdbcTemplate' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/JdbcTemplateConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of JdbcTemplate bean 'jdbcTemplate': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'monitoringDataSource' defined in class path resource [com/banking/banking_transaction_system/config/DataSourceMonitoringConfig.class]: Unsatisfied dependency expressed through method 'monitoringDataSource' parameter 0: Error creating bean with name 'monitoringDataSource': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2026-11-28 10:05:59.453 INFO  [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-11-28 10:05:59.461 INFO  [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-28 10:05:59.464 ERROR [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   accountController defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\controller\AccountController.class]
+      ?
+   accountService defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\service\AccountService.class]
+      ?
+   accountRepository defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\repository\AccountRepository.class]
+      ?
+   jdbcTemplate defined in class path resource [org/springframework/boot/jdbc/autoconfigure/JdbcTemplateConfiguration.class]
+      ?
+   dataSourceScriptDatabaseInitializer defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]
+???????
+|  monitoringDataSource defined in class path resource [com/banking/banking_transaction_system/config/DataSourceMonitoringConfig.class]
+???????
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2026-11-28 10:06:16.796 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:06:16.797 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:06:17.502 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:06:17.504 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:06:17.505 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:06:17.506 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:06:17.528 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 724 ms
+2026-11-28 10:06:17.548 WARN  [restartedMain] o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountController' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\controller\AccountController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountService' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\service\AccountService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountRepository' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\repository\AccountRepository.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jdbcTemplate' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/JdbcTemplateConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of JdbcTemplate bean 'jdbcTemplate': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'monitoringDataSource' defined in class path resource [com/banking/banking_transaction_system/config/DataSourceMonitoringConfig.class]: Unsatisfied dependency expressed through method 'monitoringDataSource' parameter 0: Error creating bean with name 'monitoringDataSource': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2026-11-28 10:06:17.549 INFO  [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-11-28 10:06:17.558 INFO  [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-28 10:06:17.563 ERROR [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   accountController defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\controller\AccountController.class]
+      ?
+   accountService defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\service\AccountService.class]
+      ?
+   accountRepository defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\repository\AccountRepository.class]
+      ?
+   jdbcTemplate defined in class path resource [org/springframework/boot/jdbc/autoconfigure/JdbcTemplateConfiguration.class]
+      ?
+   dataSourceScriptDatabaseInitializer defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]
+???????
+|  monitoringDataSource defined in class path resource [com/banking/banking_transaction_system/config/DataSourceMonitoringConfig.class]
+???????
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2026-11-28 10:06:51.298 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:06:51.299 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:06:51.749 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:06:51.750 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:06:51.752 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:06:51.752 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:06:51.770 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 466 ms
+2026-11-28 10:06:51.789 WARN  [restartedMain] o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountController' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\controller\AccountController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountService' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\service\AccountService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountRepository' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\repository\AccountRepository.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jdbcTemplate' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/JdbcTemplateConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of JdbcTemplate bean 'jdbcTemplate': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'monitoringDataSource' defined in class path resource [com/banking/banking_transaction_system/config/DataSourceMonitoringConfig.class]: Unsatisfied dependency expressed through method 'monitoringDataSource' parameter 0: Error creating bean with name 'monitoringDataSource': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2026-11-28 10:06:51.791 INFO  [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-11-28 10:06:51.799 INFO  [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-28 10:06:51.803 ERROR [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   accountController defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\controller\AccountController.class]
+      ?
+   accountService defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\service\AccountService.class]
+      ?
+   accountRepository defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\repository\AccountRepository.class]
+      ?
+   jdbcTemplate defined in class path resource [org/springframework/boot/jdbc/autoconfigure/JdbcTemplateConfiguration.class]
+      ?
+   dataSourceScriptDatabaseInitializer defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]
+???????
+|  monitoringDataSource defined in class path resource [com/banking/banking_transaction_system/config/DataSourceMonitoringConfig.class]
+???????
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2026-11-28 10:07:02.676 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:07:02.676 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:07:02.928 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:07:02.929 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:07:02.932 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:07:02.932 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:07:02.953 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 274 ms
+2026-11-28 10:07:02.966 WARN  [restartedMain] o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountController' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\controller\AccountController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountService' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\service\AccountService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountRepository' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\repository\AccountRepository.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jdbcTemplate' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/JdbcTemplateConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of JdbcTemplate bean 'jdbcTemplate': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'monitoringDataSource' defined in class path resource [com/banking/banking_transaction_system/config/DataSourceMonitoringConfig.class]: Unsatisfied dependency expressed through method 'monitoringDataSource' parameter 0: Error creating bean with name 'monitoringDataSource': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2026-11-28 10:07:02.967 INFO  [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-11-28 10:07:02.973 INFO  [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-28 10:07:02.976 ERROR [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   accountController defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\controller\AccountController.class]
+      ?
+   accountService defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\service\AccountService.class]
+      ?
+   accountRepository defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\repository\AccountRepository.class]
+      ?
+   jdbcTemplate defined in class path resource [org/springframework/boot/jdbc/autoconfigure/JdbcTemplateConfiguration.class]
+      ?
+   dataSourceScriptDatabaseInitializer defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]
+???????
+|  monitoringDataSource defined in class path resource [com/banking/banking_transaction_system/config/DataSourceMonitoringConfig.class]
+???????
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2026-11-28 10:07:21.002 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 5864 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:07:21.003 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:07:21.275 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:07:21.280 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:07:21.282 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:07:21.282 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:07:21.299 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 289 ms
+2026-11-28 10:07:21.313 WARN  [restartedMain] o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountController' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\controller\AccountController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountService' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\service\AccountService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountRepository' defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\repository\AccountRepository.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jdbcTemplate' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/JdbcTemplateConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of JdbcTemplate bean 'jdbcTemplate': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'monitoringDataSource' defined in class path resource [com/banking/banking_transaction_system/config/DataSourceMonitoringConfig.class]: Unsatisfied dependency expressed through method 'monitoringDataSource' parameter 0: Error creating bean with name 'monitoringDataSource': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2026-11-28 10:07:21.313 INFO  [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-11-28 10:07:21.319 INFO  [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-28 10:07:21.325 ERROR [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   accountController defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\controller\AccountController.class]
+      ?
+   accountService defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\service\AccountService.class]
+      ?
+   accountRepository defined in file [C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes\com\banking\banking_transaction_system\repository\AccountRepository.class]
+      ?
+   jdbcTemplate defined in class path resource [org/springframework/boot/jdbc/autoconfigure/JdbcTemplateConfiguration.class]
+      ?
+   dataSourceScriptDatabaseInitializer defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]
+???????
+|  monitoringDataSource defined in class path resource [com/banking/banking_transaction_system/config/DataSourceMonitoringConfig.class]
+???????
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2026-11-28 10:13:12.834 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.6.Final
+2026-11-28 10:13:12.936 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 12072 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:13:12.939 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:13:13.015 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-28 10:13:13.016 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-28 10:13:14.131 WARN  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'transactionExecutorConfig' of type [com.banking.banking_transaction_system.config.TransactionExecutorConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [dataSourceMonitoringPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-28 10:13:14.154 WARN  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'transactionExecutor' of type [java.util.concurrent.ThreadPoolExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [dataSourceMonitoringPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-28 10:13:14.156 WARN  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.jdbc.autoconfigure.DataSourceConfiguration$Hikari' of type [org.springframework.boot.jdbc.autoconfigure.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [dataSourceMonitoringPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-28 10:13:14.181 WARN  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.jdbc.autoconfigure.DataSourceProperties' of type [org.springframework.boot.jdbc.autoconfigure.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [dataSourceMonitoringPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-28 10:13:14.183 WARN  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration$PooledDataSourceConfiguration' of type [org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration$PooledDataSourceConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [dataSourceMonitoringPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-28 10:13:14.185 WARN  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jdbcConnectionDetails' of type [org.springframework.boot.jdbc.autoconfigure.PropertiesJdbcConnectionDetails] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [dataSourceMonitoringPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-28 10:13:14.211 WARN  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [dataSourceMonitoringPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-28 10:13:14.216 WARN  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'performanceMetricsCollector' of type [com.banking.banking_transaction_system.service.PerformanceMetricsCollector] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [dataSourceMonitoringPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-28 10:13:14.593 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:13:14.607 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:13:14.610 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:13:14.610 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:13:14.671 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1655 ms
+2026-11-28 10:13:14.779 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-11-28 10:13:15.313 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28f788ff
+2026-11-28 10:13:15.315 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-11-28 10:13:16.000 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:13:16.031 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 10:13:16.039 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 3.877 seconds (process running for 4.453)
+2026-11-28 10:14:09.552 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-11-28 10:14:09.560 INFO  [Thread-1] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 10:14:09.565 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:14:09.922 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 10:14:09.924 INFO  [Thread-1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:14:09.931 INFO  [Thread-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-11-28 10:14:09.944 INFO  [Thread-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-11-28 10:14:10.055 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 12072 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:14:10.057 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:14:10.431 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:14:10.433 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:14:10.434 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:14:10.435 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:14:10.456 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 397 ms
+2026-11-28 10:14:10.488 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-11-28 10:14:10.511 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3cf4294b
+2026-11-28 10:14:10.512 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-11-28 10:14:10.667 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:14:10.671 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 10:14:10.675 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.669 seconds (process running for 59.092)
+2026-11-28 10:14:10.679 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 10:14:13.815 INFO  [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 10:14:14.037 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 10:14:14.040 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-11-28 10:14:14.047 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-11-28 10:14:43.560 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.6.Final
+2026-11-28 10:14:43.643 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 24092 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:14:43.645 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:14:43.708 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-28 10:14:43.709 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-28 10:14:44.984 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:14:45.038 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:14:45.056 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:14:45.064 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:14:45.141 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1431 ms
+2026-11-28 10:14:45.260 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-11-28 10:14:45.594 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e42f95f
+2026-11-28 10:14:45.596 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-11-28 10:14:46.115 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:14:46.143 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 10:14:46.153 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 3.126 seconds (process running for 3.634)
+2026-11-28 10:15:37.754 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-28 10:15:37.755 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-28 10:15:37.761 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-11-28 10:17:24.099 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 5 class path changes (0 additions, 0 deletions, 5 modifications)
+2026-11-28 10:17:24.160 INFO  [Thread-1] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 10:17:24.170 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:17:24.735 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 10:17:24.738 INFO  [Thread-1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:17:24.778 INFO  [Thread-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-11-28 10:17:24.816 INFO  [Thread-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-11-28 10:17:25.117 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 24092 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:17:25.122 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:17:25.998 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:17:26.001 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:17:26.003 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:17:26.004 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:17:26.060 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 928 ms
+2026-11-28 10:17:26.131 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-11-28 10:17:26.184 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3053ee44
+2026-11-28 10:17:26.185 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-11-28 10:17:26.770 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:17:26.779 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 10:17:26.789 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 1.773 seconds (process running for 164.275)
+2026-11-28 10:17:26.795 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 10:17:40.671 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 10:17:40.673 INFO  [Thread-5] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 10:17:40.674 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:17:40.916 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 10:17:40.917 INFO  [Thread-5] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:17:40.920 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-11-28 10:17:40.923 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-11-28 10:17:41.002 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 24092 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:17:41.003 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:17:41.313 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:17:41.313 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:17:41.314 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:17:41.314 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:17:41.335 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 329 ms
+2026-11-28 10:17:41.360 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-11-28 10:17:41.376 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@affb9ec
+2026-11-28 10:17:41.377 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-11-28 10:17:41.542 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:17:41.548 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 10:17:41.552 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.581 seconds (process running for 179.038)
+2026-11-28 10:17:41.554 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 10:17:58.585 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 10:17:58.587 INFO  [Thread-9] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 10:17:58.589 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:17:58.855 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 10:17:58.857 INFO  [Thread-9] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:17:58.859 INFO  [Thread-9] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-11-28 10:17:58.863 INFO  [Thread-9] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-11-28 10:17:58.958 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 24092 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:17:58.958 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:17:59.326 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:17:59.327 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:17:59.327 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:17:59.328 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:17:59.345 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 384 ms
+2026-11-28 10:17:59.367 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-11-28 10:17:59.384 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6acdb9d
+2026-11-28 10:17:59.384 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-11-28 10:17:59.523 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:17:59.527 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 10:17:59.530 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 0.611 seconds (process running for 197.017)
+2026-11-28 10:17:59.532 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 10:18:06.241 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-28 10:18:06.244 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-28 10:18:06.247 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-11-28 10:24:19.310 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-11-28 10:24:19.342 INFO  [Thread-13] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 10:24:19.354 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:24:19.899 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 10:24:19.902 INFO  [Thread-13] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:24:19.917 INFO  [Thread-13] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-11-28 10:24:19.942 INFO  [Thread-13] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2026-11-28 10:24:20.392 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Starting BankingTransactionSystemApplication using Java 17.0.9 with PID 24092 (C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system\target\classes started by Tejas in C:\Users\hp\Downloads\banking-transaction-system\banking-transaction-system)
+2026-11-28 10:24:20.392 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-28 10:24:21.176 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-11-28 10:24:21.179 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:24:21.181 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-28 10:24:21.182 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-28 10:24:21.242 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 841 ms
+2026-11-28 10:24:21.311 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2026-11-28 10:24:21.367 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e290ac6
+2026-11-28 10:24:21.369 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2026-11-28 10:24:21.788 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-28 10:24:21.796 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-11-28 10:24:21.807 INFO  [restartedMain] c.b.b.BankingTransactionSystemApplication - Started BankingTransactionSystemApplication in 1.529 seconds (process running for 579.301)
+2026-11-28 10:24:21.811 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-11-28 10:26:24.578 INFO  [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-28 10:26:24.755 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-28 10:26:24.760 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2026-11-28 10:26:24.770 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.

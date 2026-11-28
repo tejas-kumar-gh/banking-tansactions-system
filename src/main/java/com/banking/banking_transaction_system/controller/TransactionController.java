@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,59 +22,65 @@ import com.banking.banking_transaction_system.service.TransactionService;
 @RequestMapping("/api/transactions")
 public class TransactionController {
 
-  private final TransactionService transactionService;
+    private final TransactionService transactionService;
 
-  public TransactionController(TransactionService transactionService) {
-    this.transactionService = transactionService;
-  }
+    public TransactionController(TransactionService transactionService) {
+        this.transactionService = transactionService;
+    }
 
-  @PostMapping("/deposit")
-  public ResponseEntity<Account> deposit(
-      @RequestBody Map<String, String> request) {
+    @PostMapping("/deposit")
+    public ResponseEntity<Account> deposit(
+            @RequestHeader("Idempotency-Key") String idempotencyKey,
+            @RequestBody Map<String, String> request) {
 
-    String accountNumber = request.get("accountNumber");
-    BigDecimal amount = new BigDecimal(request.get("amount"));
+        String accountNumber = request.get("accountNumber");
+        BigDecimal amount = new BigDecimal(request.get("amount"));
 
-    Account updatedAccount = transactionService.deposit(
-        accountNumber, amount);
+        Account updatedAccount = transactionService.deposit(
+                accountNumber, amount, idempotencyKey);
 
-    return ResponseEntity.ok(updatedAccount);
-  }
+        return ResponseEntity.ok(updatedAccount);
+    }
 
-  @PostMapping("/withdraw")
-  public ResponseEntity<Account> withdraw(
-      @RequestBody Map<String, String> request) {
+    @PostMapping("/withdraw")
+    public ResponseEntity<Account> withdraw(
+            @RequestHeader("Idempotency-Key") String idempotencyKey,
+            @RequestBody Map<String, String> request) {
 
-    String accountNumber = request.get("accountNumber");
-    BigDecimal amount = new BigDecimal(request.get("amount"));
+        String accountNumber = request.get("accountNumber");
+        BigDecimal amount = new BigDecimal(request.get("amount"));
 
-    Account account = transactionService.withdraw(accountNumber, amount);
+        Account account = transactionService.withdraw(
+                accountNumber, amount, idempotencyKey);
 
-    return ResponseEntity.ok(account);
-  }
+        return ResponseEntity.ok(account);
+    }
 
-  @PostMapping("/transfer")
-  public ResponseEntity<Map<String, Account>> transfer(
-      @RequestBody Map<String, String> request) {
+    @PostMapping("/transfer")
+    public ResponseEntity<Map<String, Account>> transfer(
+            @RequestHeader("Idempotency-Key") String idempotencyKey,
+            @RequestBody Map<String, String> request) {
 
-    String fromAccountNumber = request.get("fromAccountNumber");
-    String toAccountNumber = request.get("toAccountNumber");
-    BigDecimal amount = new BigDecimal(request.get("amount"));
+        String fromAccountNumber = request.get("fromAccountNumber");
+        String toAccountNumber = request.get("toAccountNumber");
+        BigDecimal amount = new BigDecimal(request.get("amount"));
 
-    Map<String, Account> result = transactionService.transfer(
-        fromAccountNumber,
-        toAccountNumber,
-        amount);
+        Map<String, Account> result = transactionService.transfer(
+                fromAccountNumber,
+                toAccountNumber,
+                amount,
+                idempotencyKey);
 
-    return ResponseEntity.ok(result);
-  }
+        return ResponseEntity.ok(result);
+    }
 
-  @GetMapping("/history/{accountNumber}")
-  public ResponseEntity<List<Transaction>> getTransactionHistory(
-      @PathVariable String accountNumber) {
+    @GetMapping("/history/{accountNumber}")
+    public ResponseEntity<List<Transaction>> getTransactionHistory(
+            @PathVariable String accountNumber) {
 
-    List<Transaction> transactions = transactionService.getTransactionHistory(accountNumber);
+        List<Transaction> transactions =
+                transactionService.getTransactionHistory(accountNumber);
 
-    return ResponseEntity.ok(transactions);
-  }
+        return ResponseEntity.ok(transactions);
+    }
 }

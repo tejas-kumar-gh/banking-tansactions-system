@@ -13,9 +13,10 @@ public class Transaction {
     private String transactionType;
     private String transactionStatus;
     private LocalDateTime createdAt;
-
+    private String idempotencyKey;
     public Transaction() {
     }
+
 
     public Transaction(
             Long transactionRecordId,
@@ -100,4 +101,11 @@ public class Transaction {
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
+    public String getIdempotencyKey() {
+    return idempotencyKey;
+}
+
+public void setIdempotencyKey(String idempotencyKey) {
+    this.idempotencyKey = idempotencyKey;
+}
 }

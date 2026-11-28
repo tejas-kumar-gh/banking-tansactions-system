@@ -3,6 +3,7 @@ package com.banking.banking_transaction_system.service;
 
 import java.math.BigDecimal;
 import java.util.Map;
+import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 import java.util.function.Supplier;
@@ -11,7 +12,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.banking.banking_transaction_system.model.Account;
-import com.banking.banking_transaction_system.exception.InsufficientBalanceException;
 
 @Service
 public class TransactionProcessingService {
@@ -30,65 +30,69 @@ public class TransactionProcessingService {
         this.metricsCollector = metricsCollector;
     }
 
+    private <T> CompletableFuture<T> submit(Supplier<T> task) {
 
-private <T> CompletableFuture<T> submit(Supplier<T> task) {
+        metricsCollector.recordSubmitted();
 
-    metricsCollector.recordSubmitted();
+        return CompletableFuture.supplyAsync(() -> {
 
-    return CompletableFuture.supplyAsync(() -> {
+            long startTime = System.nanoTime();
 
-        long startTime = System.nanoTime();
+            metricsCollector.recordResourceUsage();
 
-        metricsCollector.recordResourceUsage();
+            try {
+                T result = task.get();
 
-        try {
-            T result = task.get();
+                long duration = System.nanoTime() - startTime;
+                metricsCollector.recordSuccess(duration);
 
-            long duration = System.nanoTime() - startTime;
-            metricsCollector.recordSuccess(duration);
+                return result;
 
-            return result;
+            } catch (RuntimeException ex) {
 
-        } catch (RuntimeException ex) {
+                long duration = System.nanoTime() - startTime;
+                String exceptionName = ex.getClass().getSimpleName();
 
-            long duration = System.nanoTime() - startTime;
-            String exceptionName = ex.getClass().getSimpleName();
+                if (exceptionName.equals("InsufficientBalanceException")) {
+                    metricsCollector.recordBusinessFailure(duration);
 
-            if (exceptionName.equals("InsufficientBalanceException")) {
-                metricsCollector.recordBusinessFailure(duration);
+                } else if (
+                        exceptionName.equals("InvalidTransactionException")
+                        || exceptionName.equals("AccountNotFoundException")
+                        || exceptionName.equals("InactiveAccountException")
+                        || exceptionName.equals("DuplicateTransactionException")) {
 
-            } else if (
-                    exceptionName.equals("InvalidTransactionException")
-                    || exceptionName.equals("AccountNotFoundException")
-                    || exceptionName.equals("InactiveAccountException")
-                    || exceptionName.equals("DuplicateTransactionException")) {
+                    metricsCollector.recordRejected(duration);
 
-                metricsCollector.recordRejected(duration);
+                } else {
+                    metricsCollector.recordTechnicalFailure(duration);
+                }
 
-            } else {
-                metricsCollector.recordTechnicalFailure(duration);
+                throw ex;
+
+            } finally {
+                metricsCollector.recordResourceUsage();
             }
 
-            throw ex;
-
-        } finally {
-            metricsCollector.recordResourceUsage();
-        }
-
-    }, transactionExecutor);
-}
-
+        }, transactionExecutor);
+    }
 
     public CompletableFuture<Account> processDeposit(
             String accountNumber, BigDecimal amount) {
 
-        return submit(() -> transactionService.deposit(accountNumber, amount));
+        String idempotencyKey = UUID.randomUUID().toString();
+
+        return submit(() -> transactionService.deposit(
+                accountNumber, amount, idempotencyKey));
     }
 
     public CompletableFuture<Account> processWithdrawal(
             String accountNumber, BigDecimal amount) {
 
-        return submit(() -> transactionService.withdraw(accountNumber, amount));
+        String idempotencyKey = UUID.randomUUID().toString();
+
+        return submit(() -> transactionService.withdraw(
+                accountNumber, amount, idempotencyKey));
     }
 
     public CompletableFuture<Map<String, Account>> processTransfer(
@@ -96,8 +100,9 @@ private <T> CompletableFuture<T> submit(Supplier<T> task) {
             String toAccountNumber,
             BigDecimal amount) {
 
+        String idempotencyKey = UUID.randomUUID().toString();
+
         return submit(() -> transactionService.transfer(
-                fromAccountNumber, toAccountNumber, amount
-        ));
+                fromAccountNumber, toAccountNumber, amount, idempotencyKey));
     }
 }

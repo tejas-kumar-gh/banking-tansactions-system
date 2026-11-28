@@ -1,12 +1,11 @@
 package com.banking.banking_transaction_system;
 
-
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -35,11 +34,12 @@ class TransactionConcurrencyTest {
             throws Exception {
 
         String accountNumber = "ACC1001";
+        BigDecimal amount1 = new BigDecimal("7000");
+        BigDecimal amount2 = new BigDecimal("5000");
 
         jdbcTemplate.update(
                 "UPDATE account SET balance = 10000.00 WHERE account_number = ?",
-                accountNumber
-        );
+                accountNumber);
 
         ExecutorService executor = Executors.newFixedThreadPool(2);
         CountDownLatch ready = new CountDownLatch(2);
@@ -51,8 +51,9 @@ class TransactionConcurrencyTest {
 
             try {
                 transactionService.withdraw(
-                        accountNumber, new BigDecimal("7000.00")
-                );
+                        accountNumber,
+                        amount1,
+                        UUID.randomUUID().toString());
                 return true;
             } catch (RuntimeException ex) {
                 return false;
@@ -65,8 +66,9 @@ class TransactionConcurrencyTest {
 
             try {
                 transactionService.withdraw(
-                        accountNumber, new BigDecimal("5000.00")
-                );
+                        accountNumber,
+                        amount2,
+                        UUID.randomUUID().toString());
                 return true;
             } catch (RuntimeException ex) {
                 return false;
@@ -86,16 +88,14 @@ class TransactionConcurrencyTest {
             BigDecimal finalBalance = jdbcTemplate.queryForObject(
                     "SELECT balance FROM account WHERE account_number = ?",
                     BigDecimal.class,
-                    accountNumber
-            );
+                    accountNumber);
 
             assertNotEquals(firstSucceeded, secondSucceeded);
             assertTrue(finalBalance.compareTo(BigDecimal.ZERO) >= 0);
 
             assertEquals(
                     1,
-                    (firstSucceeded ? 1 : 0) + (secondSucceeded ? 1 : 0)
-            );
+                    (firstSucceeded ? 1 : 0) + (secondSucceeded ? 1 : 0));
 
             System.out.println("Withdrawal 1 success: " + firstSucceeded);
             System.out.println("Withdrawal 2 success: " + secondSucceeded);
